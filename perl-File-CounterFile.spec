@@ -3,8 +3,8 @@
 %bcond_without	tests # do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	File
-%define	pnam	CounterFile
+%define		pdir	File
+%define		pnam	CounterFile
 Summary:	File::CounterFile - persistent counter class
 Summary(pl):	File::CounterFile - klasa trwa³ych liczników
 Name:		perl-File-CounterFile
