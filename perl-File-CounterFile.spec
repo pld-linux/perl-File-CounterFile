@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	File
 %define	pnam	CounterFile
-Summary:	File-CounterFile perl module
-Summary(pl):	Modu³ perla File-CounterFile
+Summary:	File::CounterFile perl module
+Summary(pl):	Modu³ perla File::CounterFile
 Name:		perl-File-CounterFile
 Version:	0.12
 Release:	8
@@ -15,10 +15,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-File-CounterFile - Persistent counter class.
+File::CounterFile - Persistent counter class.
 
 %description -l pl
-Modu³ perla File-CounterFile.
+Modu³ perla File::CounterFile.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
