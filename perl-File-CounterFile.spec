@@ -28,7 +28,7 @@ access the same counters at the same time without risk of counter
 destruction.
 
 %description -l pl
-Modu³ perla File::CounterFile stanowi implementacjê klasy trwa³ych
+Modu³ Perla File::CounterFile stanowi implementacjê klasy trwa³ych
 liczników. Ka¿dy z liczników jest reprezentowany przez osobny plik w
 systemie plików. Mo¿na stosowaæ s± blokady plików, aby z tych samych
 liczników mog³o korzystaæ jednocze¶nie wiele procesów, bez ryzyka
