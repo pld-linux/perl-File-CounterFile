@@ -3,7 +3,7 @@ Summary:	File-CounterFile perl module
 Summary(pl):	Modu³ perla File-CounterFile
 Name:		perl-File-CounterFile
 Version:	0.12
-Release:	4
+Release:	5
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
