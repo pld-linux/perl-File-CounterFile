@@ -24,7 +24,7 @@ Summary(uk):	Модуль для Perl File::CounterFile
 Summary(zh_CN):	File::CounterFile Perl дё©И
 Name:		perl-File-CounterFile
 Version:	1.00
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
