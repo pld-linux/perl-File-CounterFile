@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	File
 %define	pnam	CounterFile
-%include	/usr/lib/rpm/macros.perl
 Summary:	File-CounterFile perl module
 Summary(pl):	Modu³ perla File-CounterFile
 Name:		perl-File-CounterFile
 Version:	0.12
-Release:	7
-
+Release:	8
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -22,7 +21,7 @@ File-CounterFile - Persistent counter class.
 Modu³ perla File-CounterFile.
 
 %prep
-%setup -q -n File-CounterFile-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
