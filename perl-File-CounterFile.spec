@@ -23,12 +23,12 @@ Summary(sv):	File::CounterFile Perlmodul
 Summary(uk):	Модуль для Perl File::CounterFile
 Summary(zh_CN):	File::CounterFile Perl дё©И
 Name:		perl-File-CounterFile
-Version:	1.02
+Version:	1.04
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	5d60cbf081a9b23b55ac5db429cc4dfc
+# Source0-md5:	df77e2dbc80aa3ec9647a570bb5e0cf8
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-devel >= 5.6
 BuildArch:	noarch
@@ -60,5 +60,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_vendorlib}/File/CounterFile.pm
+%{perl_vendorlib}/%{pdir}/%{pnam}.pm
 %{_mandir}/man3/*
