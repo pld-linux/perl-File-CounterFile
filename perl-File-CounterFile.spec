@@ -4,10 +4,10 @@ Summary(pl):	Modu³ perla File-CounterFile
 Name:		perl-File-CounterFile
 Version:	0.12
 Release:	3
-Copyright:	GPL
+License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
-Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/File/File-CounterFile-%{version}.tar.gz
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/File/File-CounterFile-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.005_03-14
 %requires_eq	perl
@@ -15,7 +15,7 @@ Requires:	%{perl_sitearch}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-File-CounterFile - Persistent counter class. 
+File-CounterFile - Persistent counter class.
 
 %description -l pl
 Modu³ perla File-CounterFile.
