@@ -1,11 +1,30 @@
+#
+# Conditional build:
+# _without_tests - do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	File
 %define	pnam	CounterFile
-Summary:	File::CounterFile perl module
-Summary(pl):	Modu³ perla File::CounterFile
+Summary:	File::CounterFile Perl module
+Summary(cs):	Modul File::CounterFile pro Perl
+Summary(da):	Perlmodul File::CounterFile
+Summary(de):	File::CounterFile Perl Modul
+Summary(es):	Módulo de Perl File::CounterFile
+Summary(fr):	Module Perl File::CounterFile
+Summary(it):	Modulo di Perl File::CounterFile
+Summary(ja):	File::CounterFile Perl ¥â¥¸¥å¡¼¥ë
+Summary(ko):	File::CounterFile ÆÞ ¸ðÁÙ
+Summary(no):	Perlmodul File::CounterFile
+Summary(pl):	Modu³ Perla File::CounterFile
+Summary(pt):	Módulo de Perl File::CounterFile
+Summary(pt_BR):	Módulo Perl File::CounterFile
+Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl File::CounterFile
+Summary(sv):	File::CounterFile Perlmodul
+Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl File::CounterFile
+Summary(zh_CN):	File::CounterFile Perl Ä£¿é
 Name:		perl-File-CounterFile
-Version:	0.12
-Release:	8
+Version:	1.00
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -26,19 +45,18 @@ Modu³ perla File::CounterFile.
 %build
 perl Makefile.PL
 %{__make}
+%{!?_without_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf Changes README
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc Changes README
 %{perl_sitelib}/File/CounterFile.pm
 %{_mandir}/man3/*
