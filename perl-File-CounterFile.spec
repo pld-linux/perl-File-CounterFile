@@ -14,7 +14,7 @@ Summary(fr):	Module Perl File::CounterFile
 Summary(it):	Modulo di Perl File::CounterFile
 Summary(ja):	File::CounterFile Perl ¥â¥¸¥å¡¼¥ë
 Summary(ko):	File::CounterFile ÆÞ ¸ðÁÙ
-Summary(no):	Perlmodul File::CounterFile
+Summary(nb):	Perlmodul File::CounterFile
 Summary(pl):	Modu³ Perla File::CounterFile
 Summary(pt):	Módulo de Perl File::CounterFile
 Summary(pt_BR):	Módulo Perl File::CounterFile
