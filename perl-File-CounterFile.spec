@@ -5,27 +5,13 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	File
 %define	pnam	CounterFile
-Summary:	File::CounterFile Perl module
-Summary(cs):	Modul File::CounterFile pro Perl
-Summary(da):	Perlmodul File::CounterFile
-Summary(de):	File::CounterFile Perl Modul
-Summary(es):	Módulo de Perl File::CounterFile
-Summary(fr):	Module Perl File::CounterFile
-Summary(it):	Modulo di Perl File::CounterFile
-Summary(ja):	File::CounterFile Perl ¥â¥¸¥å¡¼¥ë
-Summary(ko):	File::CounterFile ÆÞ ¸ðÁÙ
-Summary(nb):	Perlmodul File::CounterFile
-Summary(pl):	Modu³ Perla File::CounterFile
-Summary(pt):	Módulo de Perl File::CounterFile
-Summary(pt_BR):	Módulo Perl File::CounterFile
-Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl File::CounterFile
-Summary(sv):	File::CounterFile Perlmodul
-Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl File::CounterFile
-Summary(zh_CN):	File::CounterFile Perl Ä£¿é
+Summary:	File::CounterFile - persistent counter class
+Summary(pl):	File::CounterFile - klasa trwa³ych liczników
 Name:		perl-File-CounterFile
 Version:	1.04
 Release:	1
-License:	GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	df77e2dbc80aa3ec9647a570bb5e0cf8
@@ -35,10 +21,18 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-File::CounterFile - Persistent counter class.
+The File::CounterFile Perl module implements a persistent counter
+class. Each counter is represented by a separate file in the file
+system. File locking is applied, so multiple processes might try to
+access the same counters at the same time without risk of counter
+destruction.
 
 %description -l pl
-Modu³ perla File::CounterFile.
+Modu³ perla File::CounterFile stanowi implementacjê klasy trwa³ych
+liczników. Ka¿dy z liczników jest reprezentowany przez osobny plik w
+systemie plików. Mo¿na stosowaæ s± blokady plików, aby z tych samych
+liczników mog³o korzystaæ jednocze¶nie wiele procesów, bez ryzyka
+uszkodzenia licznika.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
