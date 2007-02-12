@@ -6,7 +6,7 @@
 %define		pdir	File
 %define		pnam	CounterFile
 Summary:	File::CounterFile - persistent counter class
-Summary(pl):	File::CounterFile - klasa trwa³ych liczników
+Summary(pl.UTF-8):   File::CounterFile - klasa trwaÅ‚ych licznikÃ³w
 Name:		perl-File-CounterFile
 Version:	1.04
 Release:	1
@@ -27,11 +27,11 @@ system. File locking is applied, so multiple processes might try to
 access the same counters at the same time without risk of counter
 destruction.
 
-%description -l pl
-Modu³ Perla File::CounterFile stanowi implementacjê klasy trwa³ych
-liczników. Ka¿dy z liczników jest reprezentowany przez osobny plik w
-systemie plików. Mo¿na stosowaæ s± blokady plików, aby z tych samych
-liczników mog³o korzystaæ jednocze¶nie wiele procesów, bez ryzyka
+%description -l pl.UTF-8
+ModuÅ‚ Perla File::CounterFile stanowi implementacjÄ™ klasy trwaÅ‚ych
+licznikÃ³w. KaÅ¼dy z licznikÃ³w jest reprezentowany przez osobny plik w
+systemie plikÃ³w. MoÅ¼na stosowaÄ‡ sÄ… blokady plikÃ³w, aby z tych samych
+licznikÃ³w mogÅ‚o korzystaÄ‡ jednoczeÅ›nie wiele procesÃ³w, bez ryzyka
 uszkodzenia licznika.
 
 %prep
