@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests # do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	File
 %define		pnam	CounterFile
+%include	/usr/lib/rpm/macros.perl
 Summary:	File::CounterFile - persistent counter class
 Summary(pl.UTF-8):	File::CounterFile - klasa trwałych liczników
 Name:		perl-File-CounterFile
@@ -15,8 +15,9 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	df77e2dbc80aa3ec9647a570bb5e0cf8
-BuildRequires:	rpm-perlprov >= 4.1-13
+URL:		http://search.cpan.org/dist/File-CounterFile/
 BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
