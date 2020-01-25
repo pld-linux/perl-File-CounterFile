@@ -4,7 +4,6 @@
 
 %define		pdir	File
 %define		pnam	CounterFile
-%include	/usr/lib/rpm/macros.perl
 Summary:	File::CounterFile - persistent counter class
 Summary(pl.UTF-8):	File::CounterFile - klasa trwałych liczników
 Name:		perl-File-CounterFile
